@@ -1,0 +1,53 @@
+figure.figsize: 4, 4  
+figure.dpi: 125  
+savefig.dpi: 300 
+savefig.bbox: tight  
+
+font.size: 10
+figure.titlesize: 16
+axes.titlesize: 14
+axes.labelsize: 12
+xtick.labelsize: 10
+ytick.labelsize: 10
+legend.fontsize: 10
+legend.title_fontsize: 11
+font.family: sans-serif
+font.sans-serif: Ubuntu
+axes.titleweight: normal
+axes.titlelocation: left
+
+axes.grid: True
+axes.axisbelow: True  
+grid.color: efefef
+grid.linestyle: - 
+grid.linewidth: 1.0
+
+axes.facecolor:white
+figure.facecolor:white
+axes.edgecolor: 222222
+xtick.color: 222222
+ytick.color: 222222
+
+
+axes.linewidth: 1.25
+xtick.bottom: True
+ytick.left: True
+xtick.major.size: 5
+ytick.major.size: 5
+xtick.minor.size: 2
+ytick.minor.size: 2
+
+axes.prop_cycle: cycler("color", ["113F67", "215f96", "599fc5", "B8A927", "FFDE63", "EF7722", "BB6653", "CC1616", "4B352A", "4F200D"])
+legend.markerscale: 0.75
+lines.linewidth: 1.5
+lines.markersize: 5
+
+axes.spines.left: True
+axes.spines.right: False
+axes.spines.top: False
+axes.spines.bottom: True
+
+legend.frameon: True
+legend.facecolor: white
+legend.edgecolor: white
+legend.framealpha: 0.9
