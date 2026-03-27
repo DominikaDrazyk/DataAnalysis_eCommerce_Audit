@@ -1,6 +1,6 @@
 # Olist E-Commerce Strategic Audit (2016–2018)
 
-## :black_circle: About Me
+## :large_orange_diamond: About Me
 
 I am a Doctor of Neuroscience with strong experience in data analysis, statistical modelling and research design. I focus on translating complex data into actionable insights for business and policy. I enjoy data wrangling, visualization, and project management.
 
@@ -31,7 +31,7 @@ Select the path that best matches your interest:
 
 - [Codes](./codes/): production-ready pre-staging, ETL and analysis scripts:
     - [Pre-Staging code](./codes/ecommerce_converter.py): python script for Unicode normalization & encoding correction;
-    - [ETL Pipeline](./codes/ecommerce_etl.sql): complete PostgreSQL ETL pipeline for Olist e-commerce dataset;
+    - [ETL Pipeline](./codes/ecommerce_ETL.sql): complete PostgreSQL ETL pipeline for Olist e-commerce dataset;
     - [Interactive Audit Notebook](./codes/ecommerce_analysis.ipynb): the original Jupyter environment used for iterative development and data exploration.
 
 :eight_spoked_asterisk: **Dependency Management** <br>
@@ -55,7 +55,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## :black_circle: Overview
+## :large_orange_diamond: Overview
 
 This project audits the logistical performance and market dynamics of the Olist e-commerce landscape (Brazilian marketplace). I inspect the dataset to assess whether high transaction volume and market leadership correlate with operational excellence, and to quantify the financial exposure of regional logistical bottlenecks.
 
@@ -99,7 +99,7 @@ Financial & Growth Metrics
 
 **Analytics performed**: time-series smoothing (MoM, T3M), geographic risk mapping, percentile thresholding, cohort segmentation, baseline benchmarking.
 
-## :black_circle: Objectives
+## :large_orange_diamond: Objectives
 
 1. Execute Pre-Staging by standardizing raw CSV assets, handling encoding detection, and transliterating special characters to ASCII to ensure global compatibility.
 <br> Code: `ecommerce_converter.py`
@@ -129,7 +129,7 @@ Financial & Growth Metrics
 
 :part_alternation_mark: Business-relevant insights for stakeholders interested in marketplace strategy, seller development, and supply chain optimization.
 
-## :black_circle: Examples of programming solutions
+## :large_orange_diamond: Examples of programming solutions
 
 **Data Pre-Staging (Python)**: sanitize raw CSVs, handle encoding fallbacks, and transliterate Brazilian Portuguese characters.
 
@@ -181,7 +181,7 @@ ROUND(late_deliv_count::numeric / NULLIF(order_volume, 0), 3) AS monthly_late_ra
 
 :grey_exclamation: Offered insights are focused on internal marketplace dynamics and are not based on structured academic knowledge of Brazilian macroeconomics. My aim was to demonstrate the ability to architect data, design robust ETL processes, and extract actionable business intelligence from complex relational datasets.
 
-## :black_circle: Key findings
+## :large_orange_diamond: Key findings
 
 **General trends**: The platform achieved significant gross revenue peaks during the 15-month analysis window, but this growth was highly volatile and structurally concentrated. The rapid expansion phase was characterized by reactive "growth spurts" tied to seasonality rather than sustained, linear increases in baseline seller performance.
 
@@ -196,7 +196,7 @@ The platform exhibits **three core vulnerabilities that** require strategic inte
 - **Regional Asymmetry**: The logistical landscape is deeply fragmented. São Paulo handles massive volume, meaning even rare delays create severe financial exposure ("Revenue at Risk" of ~700k BRL). Conversely, regions like Amazonas have terrible service but minimal financial impact.
 <br> :part_alternation_mark: *Business Insight*: Logistics recovery efforts (premium carriers, dedicated sorting) must be aggressively prioritized in São Paulo to protect the highest-density revenue streams first.
 
-## :black_circle: Presented skills
+## :large_orange_diamond: Presented skills
 
 **Data Modelling & Engineering**
 - Designing a *star-schema model* (fact tables + dimension tables) within a PostgreSQL environment.
