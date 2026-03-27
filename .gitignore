@@ -1,0 +1,12 @@
+.xdp-pgadmin*
+*.pgerd
+.vscode/
+*.code-workspace
+.env
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv
+.idea
+*.pyc
+

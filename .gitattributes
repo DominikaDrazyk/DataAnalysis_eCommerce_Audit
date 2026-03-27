@@ -1,0 +1,4 @@
+*.html linguist-detectable=false
+*.py linguist-detectable=false
+*.ipynb linguist-detectable=false
+*.sql linguist-detectable=true
