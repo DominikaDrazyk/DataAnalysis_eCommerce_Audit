@@ -8,6 +8,7 @@ I am a Doctor of Neuroscience with strong experience in data analysis, statistic
 - advanced **R**, advanced **Python** (*pandas*, *NumPy*, *matplotlib*, *seaborn*, *scipy*) - see my [Python portfolio project](https://github.com/DominikaDrazyk/DataAnalysis_Efficiency_and_Diversity), 
 - developing my skills in **Power BI** and **Power Apps** - see my [PowerBI portfolio project](https://github.com/DominikaDrazyk/DataAnalysis_Consultant_Dashboard),
 - developing my skills in **SQL** (**ETL**, **PostgreSQL**, **pgAdmin4**, **DBeaver**) - read along for more information,
+- comfortable managing **AI-augmented workflow**, leveraging *Cursor IDE* and *Claude* while ensuring code integrity through manual review - see my [Python/CSS portfolio project](https://github.com/DominikaDrazyk/DataAnalysis_euPOWERED_Navigator),
 - technical documentation in **Jupyter Notebook** (*Markdown* syntax), version control in **Git**.
 
 &emsp; **Location**: Poland, Krakow <br> 
