@@ -5,10 +5,10 @@
 I am a Doctor of Neuroscience with strong experience in data analysis, statistical modelling and research design. I focus on translating complex data into actionable insights for business and policy. I enjoy data wrangling, visualization, and project management.
 
 **Skills & tools:** 
-- advanced **R**, advanced **Python** (*pandas*, *NumPy*, *matplotlib*, *seaborn*, *scipy*) - see my [Python portfolio project](https://github.com/DominikaDrazyk/DataAnalysis_Efficiency_and_Diversity), 
-- developing my skills in **Power BI** and **Power Apps** - see my [PowerBI portfolio project](https://github.com/DominikaDrazyk/DataAnalysis_Consultant_Dashboard),
-- developing my skills in **SQL** (**ETL**, **PostgreSQL**, **pgAdmin4**, **DBeaver**) - read along for more information,
-- comfortable managing **AI-augmented workflow**, leveraging *Cursor IDE* and *Claude* while ensuring code integrity through manual review - see my [Python/CSS portfolio project](https://github.com/DominikaDrazyk/DataAnalysis_euPOWERED_Navigator),
+- advanced **R**, advanced **Python** (*pandas*, *NumPy*, *matplotlib*, *seaborn*, *scipy*), 
+- developing my skills in **Power BI** and **Power Apps**,
+- developing my skills in **SQL** (**ETL**, **PostgreSQL**, **pgAdmin4**, **DBeaver**),
+- comfortable managing **AI-augmented workflow**, leveraging *Cursor IDE* and *Claude*,
 - technical documentation in **Jupyter Notebook** (*Markdown* syntax), version control in **Git**.
 
 &emsp; **Contact**: dominika.a.drazyk@gmail.com <br> 
@@ -29,10 +29,10 @@ Select the path that best matches your interest:
 
 - [Full HTML Report](./reports/): a comprehensive, rendered version of the analysis, including all code, statistical interpretations, and granular findings;
 
-- [Codes](./codes/): production-ready pre-staging, ETL and analysis scripts:
-    - [Pre-Staging code](./codes/ecommerce_converter.py): python script for Unicode normalization & encoding correction;
-    - [ETL Pipeline](./codes/ecommerce_ETL.sql): complete PostgreSQL ETL pipeline for Olist e-commerce dataset;
-    - [Interactive Audit Notebook](./codes/ecommerce_analysis.ipynb): the original Jupyter environment used for iterative development and data exploration.
+- [Codes](./scripts/): production-ready pre-staging, ETL and analysis scripts:
+    - [Pre-Staging code](./scripts/ecommerce_converter.py): python script for Unicode normalization & encoding correction;
+    - [ETL Pipeline](./scripts/ecommerce_ETL.sql): complete PostgreSQL ETL pipeline for Olist e-commerce dataset;
+    - [Interactive Audit Notebook](./scripts/ecommerce_analysis.ipynb): the original Jupyter environment used for iterative development and data exploration.
 
 :eight_spoked_asterisk: **Dependency Management** <br>
 This project uses Poetry to ensure a deterministic environment (locked versions) and 100% reproducibility. For basic users, a standard `requirements.txt` is also maintained.
@@ -82,6 +82,26 @@ This project audits the logistical performance and market dynamics of the Olist 
 
 - :part_alternation_mark: Business-relevant insights for stakeholders interested in marketplace strategy, seller development, and supply chain optimization.
 
+### Objectives
+
+1. Execute Pre-Staging by standardizing raw CSV assets, handling encoding detection, and transliterating special characters to ASCII to ensure global compatibility.
+<br> Code: `ecommerce_converter.py`
+
+2. Migrate sanitized data into a structured relational environment, clean raw tables, and build normalized data models.
+<br> Code: `ecommerce_ETL.sql`
+
+3. (**Q1**) Segment the seller base to evaluate market dominance and audit logistical reliability against transaction scale.
+<br> Code: `ecommerce_analysis.ipynb` 
+
+4. (**Q2**) Analyze product portfolio efficiency to isolate high-yield categories and map the platform's dependency on specific price tiers.
+<br> Code: `ecommerce_analysis.ipynb`
+
+5. (**Q3**) Identify geographical bottlenecks and quantify the absolute "Revenue at Risk" caused by late deliveries in core vs. peripheral hubs.
+<br> Code: `ecommerce_analysis.ipynb`
+
+6. (**Q4**) Model growth velocity and market volatility using Month-over-Month (MoM) and Trailing 3-Month (T3M) smoothing to determine long-term market momentum.
+<br> Code: `ecommerce_analysis.ipynb`
+
 ### Data & Source Metadata
 
 External data source (Kaggle):
@@ -119,26 +139,6 @@ Financial & Growth Metrics
 **Version control & sharing**: Git & GitHub;
 
 **Analytics performed**: time-series smoothing (MoM, T3M), geographic risk mapping, percentile thresholding, cohort segmentation, baseline benchmarking.
-
-## :large_orange_diamond: Objectives
-
-1. Execute Pre-Staging by standardizing raw CSV assets, handling encoding detection, and transliterating special characters to ASCII to ensure global compatibility.
-<br> Code: `ecommerce_converter.py`
-
-2. Migrate sanitized data into a structured relational environment, clean raw tables, and build normalized data models.
-<br> Code: `ecommerce_ETL.sql`
-
-3. (**Q1**) Segment the seller base to evaluate market dominance and audit logistical reliability against transaction scale.
-<br> Code: `ecommerce_analysis.ipynb` 
-
-4. (**Q2**) Analyze product portfolio efficiency to isolate high-yield categories and map the platform's dependency on specific price tiers.
-<br> Code: `ecommerce_analysis.ipynb`
-
-5. (**Q3**) Identify geographical bottlenecks and quantify the absolute "Revenue at Risk" caused by late deliveries in core vs. peripheral hubs.
-<br> Code: `ecommerce_analysis.ipynb`
-
-6. (**Q4**) Model growth velocity and market volatility using Month-over-Month (MoM) and Trailing 3-Month (T3M) smoothing to determine long-term market momentum.
-<br> Code: `ecommerce_analysis.ipynb`
 
 ## :large_orange_diamond: Examples of programming solutions
 
@@ -183,7 +183,7 @@ AVG(this_month_revenue) OVER (
 ROUND(late_deliv_count::numeric / NULLIF(order_volume, 0), 3) AS monthly_late_rate
 ```
 
-### Limitations & Challenges
+## :large_orange_diamond:  Limitations & Challenges
 
 - The 100,000-order snapshot is a *historical "frozen" dataset* (2016–2018), which may not reflect recent post-pandemic shifts in Brazilian e-commerce behavior or logistics technology;
 - Models do not account for *external macroeconomic factors* such as BRL exchange rate volatility, national strikes, or changes in postal service pricing structures during the window;
@@ -220,3 +220,14 @@ The platform exhibits **three core vulnerabilities that** require strategic inte
 - Highlighting *high-impact segments* (e.g., Market Leaders, high-yield categories, and at-risk regions) visually.
 - Organizing metrics and visuals into *purposeful analytical chapters* (Q1–Q4) aligned with an executive audit scenario.
 - Preparing *comprehensive documentation* to effectively communicate methodology and translate data into *actionable business insights*.
+
+## :large_orange_diamond: Portfolio Gallery
+
+| Project | Business Impact | Key Stack |
+| :--- | :--- | :--- |
+| **[euPOWERED Navigator](https://github.com/DominikaDrazyk/DataAnalysis_euPOWERED_Navigator)** | Policy-driven energy statistics & decarbonization tracking. | Python, Streamlit, Scraping |
+| **[eCommerce Audit](https://github.com/DominikaDrazyk/DataAnalysis_eCommerce_Audit)** | Identifying financial risks and logistical bottlenecks. | PostgreSQL, ETL, Python |
+| **[Consultant Dashboard](https://github.com/DominikaDrazyk/DataAnalysis_Consultant_Dashboard)** | Market viability and competitive landscape engine. | Power BI, DAX, Star Schema |
+| **[Efficiency and Diversity](https://github.com/DominikaDrazyk/DataAnalysis_Efficiency_and_Diversity)** | Statistical research on human capital and spending. | Python, Scraping, Multivariate Stats |
+
+[← Back to Profile](https://github.com/DominikaDrazyk)
