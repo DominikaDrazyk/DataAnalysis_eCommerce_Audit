@@ -35,22 +35,33 @@ Select the path that best matches your interest:
     - [Interactive Audit Notebook](./codes/ecommerce_analysis.ipynb): the original Jupyter environment used for iterative development and data exploration.
 
 :eight_spoked_asterisk: **Dependency Management** <br>
-A strictly defined environment manifest ensuring 100% reproducibility and security. Please, follow those steps in case you would like to run the code on your local machine: 
+This project uses Poetry to ensure a deterministic environment (locked versions) and 100% reproducibility. For basic users, a standard `requirements.txt` is also maintained.
 
-- **Step 1: Initialize the Virtual Environment**
+- **Option 1: Modern Workflow (Recommended)**
+Use this if you have Poetry installed. This will automatically create a virtual environment and install the exact versions from `poetry.lock`.
 
-*Linux / macOS Bash*
 ```
-python3 -m venv .venv
-source .venv/bin/activate
+# Bash
+# Install dependencies and create virtual environment
+poetry install
+# Activate the environment
+poetry shell
 ```
-*Windows PowerShell*
+
+- **Option 2: Standard Workflow (Pip)**
+Use this for a traditional setup using the provided `requirements.txt`.
+
+1. Initialize the Virtual Environment
 ```
-python -m venv .venv
-.venv\Scripts\activate
+# Linux / macOS
+python3 -m venv .venv && source .venv/bin/activate
+# Windows 
+python -m venv .venv && .venv\Scripts\activate
 ```
-- **Step 2: Install Required Dependencies**
+
+2. Install Dependencies
 ```
+# Bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -60,6 +71,16 @@ pip install -r requirements.txt
 This project audits the logistical performance and market dynamics of the Olist e-commerce landscape (Brazilian marketplace). I inspect the dataset to assess whether high transaction volume and market leadership correlate with operational excellence, and to quantify the financial exposure of regional logistical bottlenecks.
 
 :part_alternation_mark: *Practical business question*: Does rapid marketplace scaling outpace logistical infrastructure, and what is the systemic financial risk of relying on a highly concentrated pool of top-tier sellers and regions?
+
+### What this project delivers:
+
+- A robust, Unicode-normalized Python pipeline ready for raw data imput and normalization.
+
+- A set of highly optimized, well-documented PostgreSQL views ready for BI dashboard integration.
+
+- Clear visualizations of growth trajectories, revenue concentration, and logistical risk hierarchies.
+
+- :part_alternation_mark: Business-relevant insights for stakeholders interested in marketplace strategy, seller development, and supply chain optimization.
 
 ### Data & Source Metadata
 
@@ -118,16 +139,6 @@ Financial & Growth Metrics
 
 6. (**Q4**) Model growth velocity and market volatility using Month-over-Month (MoM) and Trailing 3-Month (T3M) smoothing to determine long-term market momentum.
 <br> Code: `ecommerce_analysis.ipynb`
-
-### What this project delivers:
-
-- A robust, Unicode-normalized Python pipeline ready for raw data imput and normalization.
-
-- A set of highly optimized, well-documented PostgreSQL views ready for BI dashboard integration.
-
-- Clear visualizations of growth trajectories, revenue concentration, and logistical risk hierarchies.
-
-:part_alternation_mark: Business-relevant insights for stakeholders interested in marketplace strategy, seller development, and supply chain optimization.
 
 ## :large_orange_diamond: Examples of programming solutions
 
